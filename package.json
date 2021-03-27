@@ -1,6 +1,6 @@
 {
   "name": "@zeyuri/azure-function-express",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "sideEffects": false,
   "description": "Allows Express usage with Azure Function",
   "keywords": [
@@ -10,14 +10,14 @@
     "azure",
     "koa"
   ],
-  "homepage": "https://github.com/yvele/azure-function-express",
+  "homepage": "https://github.com/zeyuri/azure-function-express",
   "bugs": {
-    "url": "https://github.com/yvele/azure-function-express/issues"
+    "url": "https://github.com/zeyuri/azure-function-express/issues"
   },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yvele/azure-function-express"
+    "url": "https://github.com/zeyuri/azure-function-express"
   },
   "files": [
     "lib/"
@@ -43,7 +43,7 @@
     "validate": "npm run style && npm run coverage"
   },
   "engines": {
-    "node": ">=6.11.2 <=12",
+    "node": ">=6.11.2 <=14",
     "npm": ">=6"
   },
   "devDependencies": {
