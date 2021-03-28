@@ -1,6 +1,6 @@
 {
   "name": "@zeyuri/azure-function-express",
-  "version": "2.0.2",
+  "version": "2.0.5",
   "sideEffects": false,
   "description": "Allows Express usage with Azure Function",
   "keywords": [
@@ -38,7 +38,7 @@
     "clean:npm": "rm -rf node_modules",
     "coverage": "jest --coverage",
     "publish": "npm run validate && npm run build && npm publish",
-    "style": "eslint src/**",
+    "style": "eslint src/** --fix",
     "test": "jest",
     "validate": "npm run style && npm run coverage"
   },

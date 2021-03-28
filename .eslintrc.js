@@ -13,7 +13,7 @@ module.exports = {
     "no-plusplus" : "off",
 
     // Require or disallow trailing commas
-    "comma-dangle": ["error", "only-multiline"],
+    "comma-dangle" : ["error", "only-multiline"],
 
     // Disallow Reassignment of Function Parameters
     "no-param-reassign" : ["error", { props: false }],
@@ -35,6 +35,5 @@ module.exports = {
     "no-multi-spaces" : ["error", { ignoreEOLComments: true }],
 
     // Require or disallow padding within blocks
-    "padded-blocks": ["error", { classes: "always" }]
   }
 };

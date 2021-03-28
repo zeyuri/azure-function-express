@@ -11,7 +11,7 @@ function convertToBody(body, encoding) {
   // This may be removed on Azure Function native support for Buffer
   // https://github.com/Azure/azure-webjobs-sdk-script/issues/814
   // https://github.com/Azure/azure-webjobs-sdk-script/pull/781
-  return Buffer.isBuffer(body)
+  return Buffer.isBuffer(body) && encoding !== "binary"
     ? body.toString(encoding)
     : body;
 }
@@ -90,7 +90,6 @@ function writeHead(context, statusCode, statusMessage, headers) {
  * @private
  */
 export default class OutgoingMessage extends NativeOutgoingMessage {
-
   /**
    * Original implementation: https://github.com/nodejs/node/blob/v6.x/lib/_http_outgoing.js#L48
    */
@@ -106,5 +105,4 @@ export default class OutgoingMessage extends NativeOutgoingMessage {
     this.writeHead = writeHead.bind(this, context);
     this.end = end.bind(this, context);
   }
-
 }

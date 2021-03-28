@@ -32,7 +32,6 @@ function assertContext(context) {
  * @fires request
  */
 export default class ExpressAdapter extends EventEmitter {
-
   /**
    * @param {Object=} requestListener Request listener (typically an express/connect instance)
    */
@@ -80,5 +79,4 @@ export default class ExpressAdapter extends EventEmitter {
   createAzureFunctionHandler() {
     return this.handleAzureFunctionRequest.bind(this);
   }
-
 }
